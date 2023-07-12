@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Treino - Guilherme</title>
+</head>
+
+<body>
+    <main class="treino">
+        <!-- <div class="z-3 vw-100 vh-100 flex-column justify-content-center align-items-center" id="telaPreparacao">
+            <img id="imgPreparacao" src="./img/4.png" alt="Imagem de preparação">
+            <h1 class="text-danger" id="textoPreparacao">teste</h1>
+        </div> -->
+
+        <div class="container">
+            <div id="quadra">
+                <!-- LINHAS DA QUADRA -->
+                <div id="linhaCima"></div>
+                <div id="linhaDireita"></div>
+                <div id="linhaBaixo"></div>
+                <div id="linhaEsquerda"></div>
+
+                <div id="linhaSimplesEsquerda"></div>
+                <div id="linhaSimplesDireita"></div>
+
+                <div id="linhaMeioSaque"></div>
+
+                <div id="linhaFrenteSaque"></div>
+
+                <div id="linhaDuplaFundo"></div>
+                <!-- LINHAS DA QUADRA -->
+
+                <!-- POSICOES DENTRO DA QUADRA QUADRA -->
+                <!-- <div class="justify-content-center align-items-center" id="peteca">
+                    <img id="imgPosicao" src="./img/8.png" alt="Posicoes de treino" />
+                    <img id="petecaPosicao" src="./img/peteca.png" alt="Peteca de treino" />
+                </div> -->
+                <!-- POSICOES DENTRO DA QUADRA QUADRA -->
+
+                <!-- BOTOES INTEGRADOS DENTRO DA QUADRA -->
+                <!-- <div class="botaoQuadra" id="tres"></div>
+                <div class="botaoQuadra" id="dois"></div>
+                <div class="botaoQuadra" id="um"></div>
+
+                <div class="botaoQuadra" id="cinco"></div>
+                <div class="botaoQuadra" id="meio"></div>
+                <div class="botaoQuadra" id="quatro"></div>
+
+                <div class="botaoQuadra" id="oito"></div>
+                <div class="botaoQuadra" id="sete"></div>
+                <div class="botaoQuadra" id="seis"></div> -->
+                <!-- BOTOES INTEGRADOS DENTRO DA QUADRA -->
+            </div>
+        </div>
+
+        <!-- <br />
+
+        <div class="btn-icons d-flex justify-content-center align-items-center">
+            <div class="btn btn-outline-success btn-lg" id="comecar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                    <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                </svg>
+            </div>
+
+            <div class="btn btn-outline-success btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                </svg>
+            </div>
+
+            <div class="btn btn-outline-success btn-lg" id="iconTelaCheia">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" />
+                </svg>
+            </div>
+
+            <div class="btn btn-outline-success btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Configurações</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row g-3">
+
+                    <div class="form-switch col-md-6">
+                        <input class="form-check-input" type="checkbox" id="programar" />
+                        <label class="form-check-label">Gravar sequência</label>
+                    </div>
+
+                    <div class="form-switch col-md-6" style="display: none;" id="config">
+                        <input class="form-check-input" type="checkbox" id="modoExibicao" checked />
+                        <label class="form-check-label">Config de corno</label>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">Tempo em segundos:</label>
+                        <select class="form-select" id="tempo">
+                            <option selected value="0">Escolha o intervalo...</option>
+                            <option value="1">1 segundo</option>
+                            <option value="2">2 segundo</option>
+                            <option value="3">3 segundo</option>
+                            <option value="4">4 segundo</option>
+                            <option value="5">5 segundo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">Número de repetições:</label>
+                        <select class="form-select" id="repeticoes">
+                            <option selected value="0">Quantidades de vezes...</option>
+                            <option value="1">1 vez</option>
+                            <option value="2">2 vezes</option>
+                            <option value="3">3 vezes</option>
+                            <option value="4">4 vezes</option>
+                            <option value="5">5 vezes</option>
+                            <option value="6">6 vezes</option>
+                            <option value="7">7 vezes</option>
+                            <option value="8">8 vezes</option>
+                            <option value="9">9 vezes</option>
+                            <option value="10">10 vezes</option>
+                        </select>
+                    </div>
+
+                    <hr class="my-4" />
+
+                    <div class="btn btn-outline-danger" id="apagarSequencia">Apagar sequência</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title fs-2" id="offcanvasLeftLabel">Instruções</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h2 class="fs-4">Atleta</h2>
+                <p>Está é uma aplicação foi desenvolvida para lhe auxiliar no treino de movimentação. A intenção de criá-lo foi para possibilitar que atletas realize tecnica de movimentacao e simulação de golpes com sequência e número de repetição programada.</p>
+                <p>Sua utilização é irrestrita e ajudará você em seus treinos possibilitando agilizar seu footwork em quadra. Que seja muito bem aproveitado e compartilhada com toda comunidade do Badminton.</p>
+                    
+                <sup>Desenvolvido por <a href="https://jose-antonio.vercel.app" target="_blank">José Antonio</a></sup>
+                
+                <br/><br/>
+
+                <div>
+                    <h2 class="fs-4">Explicação do botão de play</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                        </svg>
+                    </div>
+                    <p>O botão play serve para dar início ao treinamento pré programado pelo botão configurações.</p>
+                </div>
+
+                <br/>
+
+                <div>
+                    <h2 class="fs-4">Explicação do botão de configurações</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                        </svg>
+                    </div>
+                    <p>Ao clicar neste botão é aberto um painel com algumas possíveis configurações:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <div class="form-switch col-md-6">
+                                <input class="form-check-input" type="checkbox" id="programar" />
+                                <label class="form-check-label">Gravar sequência</label>
+                            </div>
+                            <p>Ao marcar esta opção as próximas posições serão gravadas para ser executado pelo botão play.</p>
+                            <span>Obs: Ao gravar 1 ou menos posições será exibida a seguinte mensagem: "Grave no mínimo duas posições ou mais"</span>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-6">
+                                <label class="form-label">Tempo em segundos:</label>
+                                <select class="form-select">
+                                    <option>Escolha o intervalo...</option>
+                                    <option>1 segundo</option>
+                                    <option>2 segundo</option>
+                                    <option>3 segundo</option>
+                                    <option>4 segundo</option>
+                                    <option>5 segundo</option>
+                                </select>
+                            </div>
+                            <p>Ao escolher um intervalo ele será aplicado como intervalo de tempo quando reproduzido pelo botão play.</p>
+                            <span>Obs: Caso não seja escolhido nenhuma opção aparecerá a seguinte mensagem: "Escolha qual intervalo de tempo entre as posicoes"</span>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-md-6">
+                                <label class="form-label">Número de repetições:</label>
+                                <select class="form-select">
+                                    <option>Quantidades de vezes...</option>
+                                    <option>1 vez</option>
+                                    <option>2 vezes</option>
+                                    <option>3 vezes</option>
+                                    <option>4 vezes</option>
+                                    <option>5 vezes</option>
+                                    <option>6 vezes</option>
+                                    <option>7 vezes</option>
+                                    <option>8 vezes</option>
+                                    <option>9 vezes</option>
+                                    <option>10 vezes</option>
+                                </select>
+                            </div>
+                            <p>Nesta opção quantas vezes o movimento programado vai se repetir ao pressionar player.</p>
+                            <span>Obs: Caso não seja escolhido nenhuma opção aparecerá a seguinte mensagem: "Escolha quantas repetições serão feitas"</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <br/>
+
+                <div>
+                    <h2 class="fs-4">Explicação do botão de tela cheia</h2>
+                    <div class="btn btn-outline-success btn-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z" />
+                        </svg>
+                    </div>
+                    <p>Clicando neste botão alterna entre modo tela cheia ou modo normal.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div> -->
+
+        <br>
+
+        <div class="metronomo">
+            <div class="containerDots">
+                <div class="containerDot"><div class="dot"></div></div>
+                <div class="containerDot"><div class="dot"></div></div>
+                <div class="containerDot"><div class="dot"></div></div>
+                <div class="containerDot"><div class="dot"></div></div>
+            </div>
+
+            <div class="containerCompasso">
+                <div class="linha"></div>
+                <div class="bola"></div>
+            </div>
+
+            <div class="containerBpm">
+                <div class="btnsSubtrair">
+                    <div class="menosUm">-1</div>
+                    <div class="menosCinco">-5</div>
+                </div>
+
+                <div class="containerScroll">
+                    <div class="scrollport"></div>
+                </div>
+
+                <div class="btnsSomar">
+                    <div class="maisUm">+1</div>
+                    <div class="maisCinco">+5</div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="module" src="./javascript/index.js"></script>
+    <script src="./javascript/metronomo/contador.js"></script>
+</body>
+
+</html>
