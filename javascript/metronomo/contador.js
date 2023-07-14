@@ -2,6 +2,7 @@ const scrollports = document.getElementsByClassName("scrollport");
 const initialValue = Math.floor(300 / 2); // Número inicial selecionado (150 no caso de 1-300)
 const debouncedFunc = debounce(check, 250);
 let currentNumber = initialValue;
+let bpm
 
 for (const scrollport of scrollports) {
     scrollport.addEventListener("scroll", debouncedFunc);
@@ -31,6 +32,7 @@ function check(e) {
 
     centerCell.classList.add("selected");
     currentNumber = parseInt(centerCell.textContent);
+    bpm = currentNumber
     console.log("Número em destaque:", currentNumber);
 }
 

@@ -233,8 +233,16 @@
 
 .containerDots {
     display: flex;
+    justify-content: center;
+}
+
+.grupoDots {
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    border: 1px solid red;
 }
 
 .containerDot {
@@ -254,8 +262,7 @@
     position: relative;
 }
 
-.containerDot .dot:before {
-    content: "";
+.containerDot .dotBefore {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -265,7 +272,13 @@
     filter: blur(4px);
 }
 
-.containerDot .dot:hover::before {
+.containerDot svg {
+    z-index: 1;
+    color: white;
+    display: none;
+}
+
+.containerDot .dotBefore:hover {
     transform: rotateZ(180deg);
 }
 
