@@ -296,13 +296,13 @@
     width: 70%;
 }
 
-.metronomo .containerCompasso .bola {
+.metronomo .containerCompasso .compassoBola {
     width: 5vw;
     height: 5vw;
     border-radius: 100%;
     background-color: red;
     position: absolute;
-    /* left: 80%; */
+    /* left: 15%;    ESTA SENDO ATRIBUIDO INLINE PARA CAPTURA NO JS */
 }
 
 .metronomo .containerBpm {
