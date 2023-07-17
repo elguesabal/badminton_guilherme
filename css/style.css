@@ -278,9 +278,9 @@
     display: none;
 }
 
-.containerDot .dotBefore:hover {
+/* .containerDot .dotBefore:hover {
     transform: rotateZ(180deg);
-}
+} */
 
 .metronomo .containerCompasso { 
     display: flex;

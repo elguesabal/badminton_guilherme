@@ -1,18 +1,19 @@
-let variavelBolaTempo = ['numero das bolas', {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, {audio: '1'}, ]
+// let variavelBolaTempo = ['1', '1', '1']  SE MUDOU PARA ./javascript/botoesConfig.js
 
 function bolaTempo(nBola) {
     const id = document.getElementById(`bola${nBola}`)
     const idBefore = document.getElementById(`beforeBola${nBola}`)
     const iconMute = document.getElementById(`iconMute${nBola}`)
+    nBola = nBola - 1
 
-    if(variavelBolaTempo[nBola].audio == 1) {
-        variavelBolaTempo[nBola].audio = 2
+    if(variavelBolaTempo[nBola] == 1) {
+        variavelBolaTempo[nBola] = 2
 
         // MUDA COR DA BOLA
         id.style.background = 'linear-gradient(#ffc95d 0%, #ffcf86 10%, #b57300 50%, #614700 100%)'
         idBefore.style.background = 'linear-gradient(#ffb93f 10%, #dc8b00 50%, #3e2700 100%)'
-    } else if(variavelBolaTempo[nBola].audio == 2) {
-        variavelBolaTempo[nBola].audio = 'mudo'
+    } else if(variavelBolaTempo[nBola] == 2) {
+        variavelBolaTempo[nBola] = 'mudo'
 
         // MUDA COR DA BOLA
         id.style.background = 'linear-gradient(#636363 0%, #919191 10%, #4b4b4b 50%, #383838 100%)'
@@ -20,8 +21,8 @@ function bolaTempo(nBola) {
 
         // ESCONDE O ICONE
         iconMute.style.display = 'flex'
-    } else if(variavelBolaTempo[nBola].audio == 'mudo') {
-        variavelBolaTempo[nBola].audio = 1
+    } else if(variavelBolaTempo[nBola] == 'mudo') {
+        variavelBolaTempo[nBola] = 1
 
         // MUDA COR DA BOLA
         id.style.background = 'linear-gradient(#fffc5d 0%, #fffd86 10%, #b5b200 50%, #615f00 100%)'

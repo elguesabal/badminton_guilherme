@@ -1,5 +1,6 @@
 // BOTOES DE BATIDAS
 let nBolas = Number(document.getElementById('btnNBatida').value)
+let variavelBolaTempo = ['1', '1', '1']
 
 function batidas() {
     if(nBolas != Number(document.getElementById('btnNBatida').value)) {
@@ -17,6 +18,11 @@ function batidas() {
                 </div>
             </div>
             `
+        }
+
+        variavelBolaTempo = []
+        for(let i = 0; i < nBolas; i++) {
+            variavelBolaTempo.push(1)
         }
     }
 }
